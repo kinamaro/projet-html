@@ -1,0 +1,65 @@
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    background-color: #313338;
+    color: white;
+    min-height: 100vh;
+    margin-bottom: 40px;
+}
+
+#img-hide{
+display: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+    
+header ul img:hover {
+    transform: scale(1.2); 
+}
+
+header li img{
+    width: 100px;
+    height: 100px;
+}
+
+header nav {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    header ul {
+        display: none;
+    }
+     
+    #img-hide {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+    }
+}
+
+
+.appair {
+    animation: animationopacite 3s ease-in-out;
+    text-align: center;
+}
+
+@keyframes animationopacite {
+    0% { opacity: 0; }
+    50% { opacity: 0.5;}
+    100% { opacity: 1; }
+}

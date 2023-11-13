@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    background-color: #313338;
+    color: white;
+    min-height: 100vh;
+    margin-bottom: 40px;
+}
+
+#img-hide{
+display: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+    
+header ul img:hover {
+    transform: scale(1.2); 
+}
+
+header li img{
+    width: 100px;
+    height: 100px;
+}
+
+header nav {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    header ul {
+        display: none;
+    }
+     
+    #img-hide {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+    }
+}
+
+
+/* header */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-size: x-large;
+}
+
+p {
+    font-size: larger;
+}
+
+main article {
+    align-content: center;
+}
+
+b {
+    font-size: x-large;
+}
+
+.first-text {
+    animation: animationopacite 3s ease-in-out;
+    text-align: center;
+}
+
+@keyframes animationopacite {
+    0% { opacity: 0; }
+    50% { opacity: 0.5;}
+    100% { opacity: 1; }
+}
+
+.first-text {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#triggerCheckbox:checked .first-text {
+    opacity: 0;
+}
+
+.transition {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+#exemple {
+    margin-top: 200px;
+}
+
+#img-fleche {
+    width: 50px;
+    height: 50px;
+
+}
+
+
+    
+
+#article-sec{
+    position: absolute;
+}
+
+#article-sec .sec-text-bold{
+margin-left: 380px;
+font-weight: 300px;
+font-size: x-large;
+}
+
+#article-sec p {
+    margin-left: 280px;
+}
+
+.sec-text {
+
+    text-align: center;
+
+}
+
+.sec-text2 {
+    position: absolute;
+    gap: 100px;
+}
+
+.first-li {
+    display: flex;
+    flex-direction: column;
+
+}

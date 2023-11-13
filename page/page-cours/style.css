@@ -1,0 +1,166 @@
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    background-color: #313338;
+    color: white;
+    min-height: 100vh;
+    margin-bottom: 40px;
+}
+
+#img-hide{
+display: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+    
+header ul img:hover {
+    transform: scale(1.2); 
+}
+
+header li img{
+    width: 100px;
+    height: 100px;
+}
+
+header nav {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    header ul {
+        display: none;
+    }
+     
+    #img-hide {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        justify-content: center;
+    }
+}
+
+
+#triggerText {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #313338;
+    display: inline-block;
+    user-select: none; 
+}
+
+#animatedDiv {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#triggerText:active + #animatedDiv {
+    opacity: 1;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.appair {
+    animation: animationopacite 3s ease-in-out;
+    text-align: center;
+}
+
+@keyframes animationopacite {
+    0% { opacity: 0; }
+    50% { opacity: 0.5;}
+    100% { opacity: 1; }
+}
+
+#first {
+width: 100px;
+height: 100px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 130px;
+}
+
+
+
+.seconde-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-img1{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.div-img2{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.div-img3 {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.first-div {
+    margin-top: 200px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .seconde-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #img3 {
+         padding-left: 20px;
+    }
+
+    #img2 {
+        padding-right: 10px;
+    }
+ 
+}
